@@ -5,19 +5,34 @@ class Program
     public static void Main(string[] args)
     {
         // This function accepts user input
-        int radius;
-        double pi = Math.PI;
-        double area;
+        int integer;
+        var integervalue = 0;
+        var answer = 0;
 
-        Console.WriteLine("Please enter the radius of the circle");
+        Console.WriteLine("Please enter an integer");
         Console.WriteLine("");
 
-        Console.Write("radius: ");
-        radius = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("");
-        area = (pi * radius) * radius;
+        Console.Write("integer: ");
+        integer = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Area: " + area.ToString("0.00") + "cm²");
+        if (integer >= 0)
+        {
+            for (let count = 0; count < integer; count++)
+            {
+                integervalue++;
+                answer = answer + integervalue;
+            }
+        }
+        else
+        {
+            for (let count = 0; count > integer; count--)
+            {
+                integervalue--;
+                answer = answer + integervalue;
+            }
+        }
+
+        Console.WriteLine(answer);
 
         Console.WriteLine("\nDone.");
     }
