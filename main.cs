@@ -17,7 +17,7 @@ class Program
 
         if (integer >= 0)
         {
-            for (let count = 0; count < integer; count++)
+            for (int count = 0; count < integer; count++)
             {
                 integervalue++;
                 answer = answer + integervalue;
@@ -25,7 +25,7 @@ class Program
         }
         else
         {
-            for (let count = 0; count > integer; count--)
+            for (int count = 0; count > integer; count--)
             {
                 integervalue--;
                 answer = answer + integervalue;
